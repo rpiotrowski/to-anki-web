@@ -7,6 +7,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/settings')
+def settings():
+    return 'Settings'
+
 
 if __name__ == '__main__':
     app.run()
+
