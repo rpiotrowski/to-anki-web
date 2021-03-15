@@ -1,1 +1,6 @@
 .idea
+subtitles
+__pycache__/
+vocabulary
+to_anki
+napisy/
