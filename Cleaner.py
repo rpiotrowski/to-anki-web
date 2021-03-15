@@ -26,6 +26,13 @@ class Cleaner:
                 lineBefore = line.replace("\n", "")
 
     def clean_line_regexp(self, line: str) -> str:
+        """
+
+        :param line:
+        :type: string
+        :return: A cleaned line.
+        :rtype: string
+        """
         line = line.replace("...", "")
         line = re.sub(r'^\d+\n', "", line)
         line = re.sub(r'^\n', "", line)
