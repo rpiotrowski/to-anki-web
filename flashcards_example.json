@@ -1,14 +1,1 @@
-[
-  {
-    "question": "education background",
-    "answer": "die Ausbildung"
-  },
-  {
-    "question": "invite",
-    "answer": "einladen"
-  },
-  {
-    "question": "receive",
-    "answer": "erhalten"
-  }
-]
+[{"question": "education background", "answer": "die Ausbildung"}, {"question": "invite", "answer": "einladen"}, {"question": "receive", "answer": "erhalten"}, {"question": "cat", "answer": "die Katze"}]

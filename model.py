@@ -10,4 +10,9 @@ def load_flashcards():
         return json.load(file)
 
 
+def save_db():
+    with open("flashcards_example.json", 'w') as file:
+        return json.dump(db, file)
+
+
 db = load_flashcards()
