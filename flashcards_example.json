@@ -6,5 +6,9 @@
   {
     "question": "invite",
     "answer": "einladen"
+  },
+  {
+    "question": "receive",
+    "answer": "erhalten"
   }
 ]

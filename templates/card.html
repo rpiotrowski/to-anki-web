@@ -4,8 +4,22 @@
     <title>Flash Card</title>
 </head>
 <body>
+    <a href="{{ url_for('welcome') }}">Home</a>
     <h1>Flash Card</h1>
     Question: {{ card.question }}<br>
     Answer: {{ card.answer }}
+    <p>
+        <button>
+            {% if index < max_index %}
+                <a href="{{ url_for('show_card', index=index + 1) }}">
+                    Next card
+                </a>
+            {% else %}
+                <a href="{{ url_for('show_card', index=0) }}">
+                    Next card
+                </a>
+            {% endif %}
+        </button>
+    </p>
 </body>
 </html>
