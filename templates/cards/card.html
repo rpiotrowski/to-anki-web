@@ -1,9 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Flash Card</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Card{% endblock %}
+
+{% block content %}
     <a href="{{ url_for('welcome') }}">Home</a>
     <h1>Flash Card</h1>
     Question: {{ card.question }}<br>
@@ -21,5 +20,4 @@
             {% endif %}
         </button>
     </p>
-</body>
-</html>
+{% endblock %}

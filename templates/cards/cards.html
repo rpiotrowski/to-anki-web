@@ -1,9 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Flash Cards</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Show cards{% endblock %}
+
+{% block content %}
     <a href="{{ url_for('welcome') }}">Home</a>
     <h1>Flash Cards</h1>
     <ul>
@@ -15,5 +14,4 @@
         </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

@@ -4,26 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Anki flashcards</title>
+    <title>{% block title %}Anki flashcards{% endblock %}</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    {#    <link href="{{ asset('css/style.css') }}" rel="stylesheet">#}
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
 </head>
-
-<style>
-
-    body {
-        padding-top: 5rem;
-    }
-
-    .starter-template {
-        padding: 3rem 1.5rem;
-        text-align: center;
-    }
-
-</style>
 
 <body>
 
