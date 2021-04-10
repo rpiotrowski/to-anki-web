@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return render_template('welcome.html', message="Welcome", )
+    return render_template('base.html')
 
 
 @app.route('/settings')
@@ -18,14 +18,19 @@ def settings():
 def show_card(index):
     try:
         card = db[index]
-        return render_template('card.html', card=card, index=index, max_index=len(db) - 1)
+        return render_template('cards/card.html', card=card, index=index, max_index=len(db) - 1)
     except IndexError:
         abort(404)
 
 
 @app.route('/cards')
 def show_cards():
-    return render_template('cards.html', cards=db)
+    return render_template('cards/cards.html', cards=db)
+
+
+@app.route('/add_card')
+def add_card():
+    return render_template('cards/add_card.html')
 
 
 @app.route('/api/card/<int:index>')
