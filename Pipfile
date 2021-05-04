@@ -8,6 +8,8 @@ flask = "*"
 requests = "*"
 bs4 = "*"
 openpyxl = "*"
+flask-migrate = "*"
+flask-wtf = "*"
 
 [dev-packages]
 
